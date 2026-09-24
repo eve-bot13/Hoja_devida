@@ -107,9 +107,15 @@ nav a:hover, .btn:hover {
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  align-items: start; 
+}
+
+.item {
+    margin-bottom: 25px; /* Espacio extra por si las tarjetas se apilan una sobre otra */
+    padding: 24px;       /* Otorga espacio interno para que el texto no toque los bordes */
 }
 
 .item {
@@ -118,6 +124,7 @@ nav a:hover, .btn:hover {
     border-radius: 18px;
     border-left: 6px solid #a77b52;
     box-shadow: 0 6px 18px rgba(75, 53, 38, .13);
+    height: fit-content;
 }
 
 .item h3 {
